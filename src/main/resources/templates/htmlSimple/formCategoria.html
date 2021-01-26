@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Creación de categoria</h1>
+	<form action="/categorias/save" method="post">
+		<label for="nombre">Nombre:</label>
+		<br> 
+		<input type="text"
+			name="nombre" value="">
+			<br> 
+			<label
+			for="lname">Descripción:</label>
+			<br> 
+			<input type="text" 
+			name="descripcion" value=""><br>
+		<br> 
+		<input type="submit" value="Guardar">
+	</form>
+</body>
+</html>
