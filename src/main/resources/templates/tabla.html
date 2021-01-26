@@ -37,7 +37,7 @@
 				<img th:src="@{/images/{img} ( img=${vacante.imagen} ) }" width="136" height="136">
 			</td>
 			<td th:text="${vacante.nombre}"></td>
-			<td th:text="${vacante.fecha}"></td>
+			<td th:text="${#dates.format(vacante.fecha, 'dd-MM-yyyy')}"></td>
 			<td th:text="${vacante.salario}"></td>
 			<td th:text="${vacante.descripcion}"></td>
 			<!-- 
